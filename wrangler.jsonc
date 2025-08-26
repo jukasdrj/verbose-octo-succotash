@@ -1,0 +1,16 @@
+// wrangler.jsonc
+{
+  "name": "email-spam-filter",
+  "main": "src/index.js",
+  "compatibility_date": "2025-02-11",
+  
+  // Enable comprehensive logging
+  "logpush": true,
+  "observability": {
+    "enabled": true
+  }
+  
+  // Note: Email routing is configured through the Cloudflare Dashboard
+  // under Email > Email Routing, not through wrangler.jsonc routes
+  // The worker will be available to select in the Email Routing rules
+}
